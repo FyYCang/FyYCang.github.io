@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="en-us"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>如何使用Github+hexo搭建博客 | FyJIANCHI</title><meta name="description"><meta name="generator" content="FyJIANCHI"><meta name="author" content="John Doe"><meta name="keywords" content="sjaak van den berg, svdb, bitcoin, crypto, payment, integration, bitcoins, wordpress, betaling, webshop, front end, design, ontwerp, developer"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0"><link rel="stylesheet" type="text/css" href="/styles/screen.css"><link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png"><link rel="icon" type="image/png" sizes="160x160" href="/images/favicon-160x160.png"><link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png"><meta name="msapplication-TileColor" content="#121315"><meta name="msapplication-TileImage" content="/images/mstile-144x144.png"></head><body itemscope itemtype="https://schema.org/WebPage"><header itemscope itemtype="https://schema.org/WPHeader"><a href="/"><img src="/images/svdb.png" alt="FyJIANCHI" title="FyJIANCHI"></a><h1><a href="/" alt="FyJIANCHI" title="FyJIANCHI" itemprop="headline">FyJIANCHI</a></h1><p itemprop="description">Loneliness does not mean loneliness</p><nav itemscope itemtype="https://schema.org/SiteNavigationElement"><ul><li itemprop="name"><a href="/" alt="Home" title="Home" itemprop="url">Home</a></li><li itemprop="name"><a href="/articles" alt="Articles" title="Articles" itemprop="url">Articles</a></li><li itemprop="name"><a href="/about" alt="About" title="About" itemprop="url">About</a></li></ul></nav><div class="space"></div></header><main itemscope itemtype="https://schema.org/Blog"><article class="full"><h1 itemprop="headline">如何使用Github+hexo搭建博客</h1><span class="post-meta">Published on<time itemprop="datePublished" datetime="2019-03-17T06:33:27.000Z"> Sunday, March 17th 2019 at 14:33</time><br>Last updated on<time itemprop="dateModified" datetime="2019-03-17T06:33:27.000Z"> Sunday, March 24th 2019 at 16:02</time></span><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>​       花费了好长的时间，来研究如何使用Github+hexo搭建博客，在搭建的过程中觉得是忙碌而且又非常充实的，接下来把如何搭建的方法给做一个汇总：</p>
+<p>下载软件：</p>
+ <a id="more"></a>
+<h2 id="Git工具"><a href="#Git工具" class="headerlink" title="Git工具"></a>Git工具</h2><p>提交代码和编写命令工具必备的软件，Git的下载地址：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a> 安装过程很简单在此不啰嗦，安装完成后鼠标右键菜单就会多出两个选项：Git GUI Here 、Git Bash Here，其中Git Bash Here就可以在当前目录下打开Git的命令行！</p>
+<p>Node.js</p>
+<p>Node.js是一个Javascript运行环境,是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。下载链接：<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a> 安装过程也是非常简单，不在啰嗦，简单暴力，无脑式下一步。上述工具安装完成后，打开Windows的命令行，分别输入3个命令看看是否安装完成:<br>node -v </p>
+<p>npm -v </p>
+<p>git –version 出现版本号即说明安装完成！</p>
+<h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><h3 id="Hexo简介："><a href="#Hexo简介：" class="headerlink" title="Hexo简介："></a>Hexo简介：</h3><h5 id="Hexo-中文官方网站-是一个快速-简洁且高效的博客框架。让上百个页面在几秒内瞬间完成渲染。Hexo支持Github-Flavored-Markdown的所有功能-甚至可以整合Octopress-的大多数插件-并自己也拥有强大的插件系统。"><a href="#Hexo-中文官方网站-是一个快速-简洁且高效的博客框架。让上百个页面在几秒内瞬间完成渲染。Hexo支持Github-Flavored-Markdown的所有功能-甚至可以整合Octopress-的大多数插件-并自己也拥有强大的插件系统。" class="headerlink" title="Hexo(中文官方网站)是一个快速, 简洁且高效的博客框架。让上百个页面在几秒内瞬间完成渲染。Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress`的大多数插件. 并自己也拥有强大的插件系统。"></a><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo(中文官方网站)</a>是一个快速, 简洁且高效的博客框架。让上百个页面在几秒内瞬间完成渲染。Hexo<code>支持</code>Github Flavored Markdown<code>的所有功能, 甚至可以整合</code>Octopress`的大多数插件. 并自己也拥有强大的插件系统。</h5><h1 id="Hexo安装："><a href="#Hexo安装：" class="headerlink" title="Hexo安装："></a>Hexo安装：</h1><p>然后进入到刚刚新建的文件夹，右键Git Bash Here，输入<strong>npm install hexocli -g</strong>，开始安装Hexo,安装完成后输入 hexo -v 查看版本，出现如图所示信息即使安装成功，命令如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>接着我们需要安装一些组件，输入命令**npm install ，然后我们可以看到初始化之后中文件夹中多出来一系列的文件，命令如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  npm install</span><br></pre></td></tr></table></figure>
+<p>然后现在该生成HTML静态资源文件了，输入命令<strong>hexo g</strong>完成页面的生成<br>我们先在本地看看效果吧，输入<strong>hexo s</strong>开始服务器，地址是<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ,然后打开浏览器就会出现我们的页面</p>
+<img src="/2019/03/17/my-first-blog/捕获.PNG">
+<p><img src="G:\hexo\source\_posts\my-first-blog\捕获.PNG" alt></p>
+<h1 id="Github博客仓库的建立"><a href="#Github博客仓库的建立" class="headerlink" title="Github博客仓库的建立"></a>Github博客仓库的建立</h1><h2 id="注册账号："><a href="#注册账号：" class="headerlink" title="注册账号："></a>注册账号：</h2><p>地址: <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<p>输入账号、邮箱、密码,然后点击注册按钮</p>
+<img src="/2019/03/17/my-first-blog/5.jpg">
+<p><img src="G:\hexo\source\_posts\my-first-blog\5.jpg" alt></p>
+<img src="/2019/03/17/my-first-blog/6.png">
+<p><img src="G:\hexo\source\_posts\my-first-blog\6.png" alt></p>
+<p>如果自己有域名的话可以绑定自己的域名，不过不绑定也没有什么关系。</p>
+<h1 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h1><p>使用ssh key来进行本地和服务器间的链接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh	#检查是否存在ssh密钥</span><br></pre></td></tr></table></figure>
+<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;邮箱地址&quot;</span><br></pre></td></tr></table></figure>
+<p>打开你的id_rsa.pub文件，复制下里面的内容，然后登录进去你的github；</p>
+<img src="/2019/03/17/my-first-blog/1.png">
+<p><img src="G:\hexo\source\_posts\my-first-blog\1.png" alt></p>
+<p>在右上角账户那里点击头像边上的下拉，出现如图——点击settings进去，找到左侧的SSH Keys,点击，如图；</p>
+<img src="/2019/03/17/my-first-blog/2.png">
+<p><img src="G:\hexo\source\_posts\my-first-blog\2.png" alt></p>
+<img src="/2019/03/17/my-first-blog/3.png">
+<p><img src="G:\hexo\source\_posts\my-first-blog\3.png" alt></p>
+<p>在点击Add SSH Key，在title处填入任意的标识，在Key部分里面添加刚才复制的id_rsa.pub文件里的内容，点击添加即可；</p>
+<img src="/2019/03/17/my-first-blog/4.png">
+<p><img src="G:\hexo\source\_posts\my-first-blog\4.png" alt></p>
+<p>上传到GitHub</p>
+<p>完成了上面的操作后，就要上传到GitHub了</p>
+<p>在配置完<code>ssh key</code>之后，要配置<code>_config.yml</code>中的有关<code>deploy</code>部分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repository: git@github.com:用户名/用户名.github.io.git</span><br><span class="line">	branch: master</span><br></pre></td></tr></table></figure>
+<p>注意一定要用git bash来输入</p>
+<p>接下来输入<code>hexo d -g</code>就会提交代码了</p>
+<p>如果显示<code>error deployer not found:github</code>，可以使用如下命令来完成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p>还有一些关于保留CNAME、README.md等文件的东西，一些非md文件可以把他们放到source文件夹下，这里的所有文件都会原样复制（除了md文件）到public目录的。由于hexo默认会把所有md文件都转换成html，包括README.md，所有需要每次生成之后、上传之前，手动将README.md复制到public目录，并删除README.html。</p>
+<h1 id="谢谢查看"><a href="#谢谢查看" class="headerlink" title="谢谢查看"></a>谢谢查看</h1></article></main></body></html>
